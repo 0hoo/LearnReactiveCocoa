@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68AF2BD405EF7A8B071A7B81 /* libPods-ReactivePractice2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1A2C7F41C75A1BA7162B93 /* libPods-ReactivePractice2.a */; };
+		C567B7651B55341600DC8CCA /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C567B7641B55341600DC8CCA /* PhotoViewController.swift */; };
 		C5E2DBFC1B540ECA00C889CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DBFB1B540ECA00C889CE /* AppDelegate.swift */; };
 		C5E2DC031B540ECA00C889CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E2DC021B540ECA00C889CE /* Images.xcassets */; };
 		C5E2DC061B540ECA00C889CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E2DC041B540ECA00C889CE /* LaunchScreen.xib */; };
@@ -33,6 +34,7 @@
 		102509AD4C4113EC4D53EA8F /* Pods-ReactivePractice2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePractice2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactivePractice2/Pods-ReactivePractice2.debug.xcconfig"; sourceTree = "<group>"; };
 		64B7CC5790665698285D96E8 /* Pods-ReactivePractice2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactivePractice2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactivePractice2/Pods-ReactivePractice2.release.xcconfig"; sourceTree = "<group>"; };
 		9D1A2C7F41C75A1BA7162B93 /* libPods-ReactivePractice2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactivePractice2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C567B7641B55341600DC8CCA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C5E2DBF61B540ECA00C889CE /* ReactivePractice2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePractice2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E2DBFA1B540ECA00C889CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5E2DBFB1B540ECA00C889CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				C5E2DC1D1B54132100C889CE /* Helper.m */,
 				C5E2DC1F1B54136900C889CE /* RACSignal+Extensions.swift */,
 				C5E2DBFB1B540ECA00C889CE /* AppDelegate.swift */,
+				C567B7641B55341600DC8CCA /* PhotoViewController.swift */,
 				C5E2DC211B5413BA00C889CE /* GalleryViewController.swift */,
 				C5E2DC271B5413FD00C889CE /* PhotoCell.swift */,
 				C5E2DC231B5413E500C889CE /* PhotoModel.swift */,
@@ -287,6 +290,7 @@
 				C5E2DC201B54136900C889CE /* RACSignal+Extensions.swift in Sources */,
 				C5E2DC221B5413BA00C889CE /* GalleryViewController.swift in Sources */,
 				C5E2DC1E1B54132100C889CE /* Helper.m in Sources */,
+				C567B7651B55341600DC8CCA /* PhotoViewController.swift in Sources */,
 				C5E2DC241B5413E500C889CE /* PhotoModel.swift in Sources */,
 				C5E2DBFC1B540ECA00C889CE /* AppDelegate.swift in Sources */,
 			);

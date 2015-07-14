@@ -11,6 +11,7 @@ import UIKit
 class PhotoViewController: UIViewController {
     
     let photoModel: PhotoModel
+
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -50,4 +51,6 @@ class PhotoViewController: UIViewController {
             SVProgressHUD.showErrorWithStatus("Error")
         })
     }
+    
+    
 }

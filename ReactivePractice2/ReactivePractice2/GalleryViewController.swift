@@ -54,6 +54,18 @@ class GalleryViewController: UICollectionViewController {
         }
     }
     
+    
+    
+    override func collectionView(collectionView: UICollectionView,
+        didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.navigationController?.pushViewController(
+            PhotoViewController(photoModel: self.photos[indexPath.item]),
+            animated: true)
+    }
+    
+    
+    
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
     }
