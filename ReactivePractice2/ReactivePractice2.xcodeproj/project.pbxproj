@@ -16,7 +16,6 @@
 		C5E2DC201B54136900C889CE /* RACSignal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DC1F1B54136900C889CE /* RACSignal+Extensions.swift */; };
 		C5E2DC221B5413BA00C889CE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DC211B5413BA00C889CE /* GalleryViewController.swift */; };
 		C5E2DC241B5413E500C889CE /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DC231B5413E500C889CE /* PhotoModel.swift */; };
-		C5E2DC261B5413F100C889CE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DC251B5413F100C889CE /* PhotoViewController.swift */; };
 		C5E2DC281B5413FD00C889CE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E2DC271B5413FD00C889CE /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		C5E2DC1F1B54136900C889CE /* RACSignal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RACSignal+Extensions.swift"; sourceTree = "<group>"; };
 		C5E2DC211B5413BA00C889CE /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		C5E2DC231B5413E500C889CE /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
-		C5E2DC251B5413F100C889CE /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C5E2DC271B5413FD00C889CE /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +105,6 @@
 				C5E2DC1F1B54136900C889CE /* RACSignal+Extensions.swift */,
 				C5E2DBFB1B540ECA00C889CE /* AppDelegate.swift */,
 				C5E2DC211B5413BA00C889CE /* GalleryViewController.swift */,
-				C5E2DC251B5413F100C889CE /* PhotoViewController.swift */,
 				C5E2DC271B5413FD00C889CE /* PhotoCell.swift */,
 				C5E2DC231B5413E500C889CE /* PhotoModel.swift */,
 				C5E2DC1B1B5412EE00C889CE /* BridgeHeader.h */,
@@ -292,7 +289,6 @@
 				C5E2DC1E1B54132100C889CE /* Helper.m in Sources */,
 				C5E2DC241B5413E500C889CE /* PhotoModel.swift in Sources */,
 				C5E2DBFC1B540ECA00C889CE /* AppDelegate.swift in Sources */,
-				C5E2DC261B5413F100C889CE /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
