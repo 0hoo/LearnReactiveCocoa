@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'ReactivePractice2' do
+pod 'ReactiveCocoa', '2.1.4'
+pod '500px-iOS-api', '1.0.4'
+pod 'SVProgressHUD', '0.9'
+end
+
+target 'ReactivePractice2Tests' do
+
+end
+
