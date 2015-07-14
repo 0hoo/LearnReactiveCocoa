@@ -11,15 +11,12 @@ import UIKit
 class PhotoViewController: UIViewController {
     
     let photoModel: PhotoModel
-    let photoIndex: Int
-    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(photoModel: PhotoModel, photoIndex: Int) {
+    init(photoModel: PhotoModel) {
         self.photoModel = photoModel
-        self.photoIndex = photoIndex
         
         super.init(nibName: nil, bundle: nil)
     }
