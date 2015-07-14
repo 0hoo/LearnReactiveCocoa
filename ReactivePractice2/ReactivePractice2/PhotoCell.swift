@@ -39,6 +39,25 @@ class PhotoCell: UICollectionViewCell {
     }
     
     func setPhotoModel(model: PhotoModel) {
-        
+        subscription = RACObserve(model, "thumbnailData").filter { $0 != nil }.map { x in
+            return UIImage(data: x as! NSData)
+        }.subscribeNext { [weak self] x in
+            self?.imageView.image = (x as? UIImage) ?? nil
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

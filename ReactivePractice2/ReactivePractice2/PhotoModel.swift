@@ -94,6 +94,48 @@ class PhotoImpoter: NSObject {
     
     class func importPhotos() -> RACReplaySubject {
         let subject = RACReplaySubject()
+        let request = PhotoImpoter.popularURLRequest()
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+            (response, data, error) -> Void in
+            if data == nil {
+                subject.sendError(NSError())
+            } else {
+                var models: [PhotoModel] = []
+                if let result = NSJSONSerialization.JSONObjectWithData(data,
+                    options: NSJSONReadingOptions.MutableContainers, error: nil) as? NSDictionary {
+                    if let photoDicts = result.objectForKey("photos") as? [NSDictionary] {
+                        for dict in photoDicts {
+                            let model = PhotoModel()
+                            PhotoImpoter.configurePhotoModel(model, dictionary: dict)
+                            PhotoImpoter.downloadThumbnailForPhotoModel(model)
+                            models.append(model)
+                        }
+                    }
+                }
+                subject.sendNext(models)
+                subject.sendCompleted()
+            }
+        }
+        
         return subject
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

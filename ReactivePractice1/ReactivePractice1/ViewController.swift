@@ -17,6 +17,52 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textField.rac_textSignal().subscribeNext { (x) -> Void in
+            println(x)
+        }
+        
+        let textSignal = self.textField.rac_textSignal().map { (x) -> AnyObject! in
+            NSNumber(bool: ((x as? NSString) ?? "").rangeOfString("@").location != NSNotFound)
+        } //NSNumber (boolean)
+        
+        let colorSignal = textSignal.map { x in
+            ((x as? NSNumber)?.boolValue ?? false) ? UIColor.greenColor() : UIColor.redColor()
+        } // UICOlor
+        
+        //textSignal ~> RAC(button, "enabled")
+        colorSignal ~> RAC(textField, "textColor")
+        
+        let passwordSignal = self.passwordField.rac_textSignal().map { x in
+            NSNumber(bool: (x as? NSString ?? "").length > 4)
+        } //NSNumber
+        
+        let formValidSignal =  RACSignal.combineLatest([textSignal, passwordSignal]).map {
+            let tuple = $0 as! RACTuple
+            let bools = tuple.allObjects() as! [Bool]
+            return NSNumber(bool: bools[0] == true && bools[1] == true)
+        }
+        formValidSignal ~> RAC(signInButton, "enabled")
+        
+        button.rac_command = RACCommand(enabled: textSignal, signalBlock: { (x) -> RACSignal! in
+            println("pressed")
+            return RACSignal.empty()
+        })
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
